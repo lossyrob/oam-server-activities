@@ -5,7 +5,6 @@ all: activities
 activities:
 	@docker build -f ./Dockerfile -t $(DOCKER_IMAGE) .
 
-
 start: activities
 	@docker run \
 		--name oam-server-activities \

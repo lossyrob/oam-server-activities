@@ -1,5 +1,8 @@
 # OpenAerialMap Server: Activities component
 
+[![Circle CI](https://circleci.com/gh/hotosm/oam-server-activities/tree/master.svg?style=svg)](https://circleci.com/gh/hotosm/oam-server-activities/tree/master)
+[![Docker Repository on Quay.io](https://quay.io/repository/hotosm/oam-server-activities/status "Docker Repository on Quay.io")](https://quay.io/repository/hotosm/oam-server-activities)
+
 The Activities component of OAM Server is a [swfr](http://github.com/stamen/swfr) SWF activities worker that processes OAM tiling tasks.
 
 ## Activities
