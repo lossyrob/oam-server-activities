@@ -6,7 +6,7 @@ var debug = require("debug"),
 
 var shell = require("swfr").shell;
 
-var vsiCurlify = require("./vsiCurlify");
+var vsiCurlify = require("../vsiCurlify");
 
 var log = debug("swfr:shell");
 
@@ -59,4 +59,4 @@ module.exports = function getInfo(uri, callback) {
   });
 };
 
-module.exports.version = "1.0";
+module.exports.version = "1.3";

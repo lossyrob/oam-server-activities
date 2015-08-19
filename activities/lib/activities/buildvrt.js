@@ -5,11 +5,11 @@ var fs = require('fs'),
     util = require("util");
 
 var tmp = require('tmp'),
-    output = require("swfr").output,
+    output = require("swfr").singleOutput,
     shell = require("swfr").shell,
     _ = require("underscore");
 
-var vsiCurlify = require("./vsiCurlify");
+var vsiCurlify = require("../vsiCurlify");
 
 module.exports = function buildVRT(files, outputUri, options, callback) {
   files = _.map(files, vsiCurlify);
@@ -66,4 +66,4 @@ module.exports = function buildVRT(files, outputUri, options, callback) {
   });
 };
 
-module.exports.version = "1.0";
+module.exports.version = "1.3";

@@ -10,7 +10,7 @@
     "url": "https://github.com/hotosm/oam-server-activities.git"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "async": "^1.3.0",

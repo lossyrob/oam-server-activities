@@ -3,10 +3,10 @@
 var assert = require("assert");
 
 var clone = require("clone"),
-    output = require("swfr").output,
+    output = require("swfr").singleOutput,
     shell = require("swfr").shell;
 
-var vsiCurlify = require("./vsiCurlify");
+var vsiCurlify = require("../vsiCurlify");
 
 module.exports = function reproject(inputPath, outputUri, options, callback) {
   inputPath = vsiCurlify(inputPath);
@@ -68,4 +68,4 @@ module.exports = function reproject(inputPath, outputUri, options, callback) {
   });
 };
 
-module.exports.version = "1.0";
+module.exports.version = "1.3";

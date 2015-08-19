@@ -13,7 +13,7 @@ start: activities
 		$(DOCKER_IMAGE) start
 
 clean:
-	@docker kill oam-server-aactivities >> /dev/null 2>&1 || true
+	@docker kill oam-server-activities >> /dev/null 2>&1 || true
 	@docker rm oam-server-activities >> /dev/null 2>&1 || true
 
 .PHONY: all activities start clean
