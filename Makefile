@@ -1,19 +1,21 @@
 DOCKER_IMAGE = oam/server-activities:latest
 
-all: activities
+all: build
 
-activities:
+build:
 	@docker build -f ./Dockerfile -t $(DOCKER_IMAGE) .
 
 
-start: activities
+start: clean build
 	@docker run \
+		-i -t \
 		--name oam-server-activities \
 		--volume $(PWD)/activities:/app/activities \
+	        --volume $(HOME)/.aws:/app/.aws \
 		$(DOCKER_IMAGE) start
 
 clean:
 	@docker kill oam-server-activities >> /dev/null 2>&1 || true
 	@docker rm oam-server-activities >> /dev/null 2>&1 || true
 
-.PHONY: all activities start clean
+.PHONY: all build start clean
