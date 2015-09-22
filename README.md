@@ -1,3 +1,7 @@
+# __NOTE__
+
+The SWF approach to OAM Server did not work out, so this code is not being used. There's some great stuff here though, so feel free to pull code and components from it.
+
 # OpenAerialMap Server: Activities component
 
 [![Circle CI](https://circleci.com/gh/hotosm/oam-server-activities/tree/master.svg?style=svg)](https://circleci.com/gh/hotosm/oam-server-activities/tree/master)
