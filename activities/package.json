@@ -28,6 +28,7 @@
     "require-env": "0.0.4",
     "rimraf": "^2.4.1",
     "sphericalmercator": "^1.0.3",
+    "swfr": "lossyrob/swfr",
     "tessera": "^0.5.3",
     "tilelive-file": "0.0.3",
     "tmp": "0.0.26",
